@@ -1,8 +1,5 @@
-// src/OptionPricing.cpp
-
-#include "../include/OptionPricing.h"
+#include "OptionPricing.h"
 #include <cmath>
-#include <algorithm>
 
 double downAndOutCall(double S, double K, double r, double T, double sigma, double B)
 {

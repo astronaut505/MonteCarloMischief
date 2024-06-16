@@ -4,8 +4,8 @@
       "name": "Win32",
       "includePath": [
         "${workspaceFolder}/**",
-        "C:/Program Files/R/R-4.3.1/include",
-        "C:/Libraries/Rcpp/include"
+        "C:/Libraries/Rcpp/include",
+        "C:/Program Files/R/R-4.3.1/include"
       ],
       "defines": [],
       "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",

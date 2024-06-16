@@ -1,3 +1,2 @@
-PKG_CPPFLAGS = -I../include
+PKG_CPPFLAGS = -I../inst/include
 PKG_LIBS = $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)
-SOURCES = ../src/OptionPricing.cpp ../src/MonteCarloSimulation.cpp ../src/Portfolio.cpp

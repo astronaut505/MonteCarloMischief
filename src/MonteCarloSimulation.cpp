@@ -1,8 +1,9 @@
-// src/MonteCarloSimulation.cpp
-
-#include "../include/MonteCarloSimulation.h"
+#include "MonteCarloSimulation.h"
 #include <random>
 #include <cmath>
+
+MonteCarloSimulation::MonteCarloSimulation(double S0, double r, double sigma, double T, int numSimulations)
+    : S0(S0), r(r), sigma(sigma), T(T), numSimulations(numSimulations) {}
 
 std::vector<double> MonteCarloSimulation::simulate()
 {
@@ -12,7 +13,7 @@ std::vector<double> MonteCarloSimulation::simulate()
 
     for (int i = 0; i < numSimulations; ++i)
     {
-        double ST = S0 * exp((r - d - 0.5 * sigma * sigma) * T + sigma * sqrt(T) * dist(gen));
+        double ST = S0 * exp((r - 0.5 * sigma * sigma) * T + sigma * sqrt(T) * dist(gen));
         prices[i] = ST;
     }
 

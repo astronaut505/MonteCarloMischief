@@ -21,7 +21,7 @@ barrier_levels <- seq(90, 115, by = 1)
 # Perform simulations
 results <- expand.grid(s = underlying_prices, b = barrier_levels)
 results$price <- mapply(function(s, b) {
-  as.numeric(price_portfolio(s, sigma, r, d, t, k1, k2, k3, k4, s * 0.8, s * 1.2))
+  as.numeric(price_portfolio(s, sigma, r, d, t, k1, k2, k3, k4, s * 0.8, s * 1.2)) # nolint
 }, results$s, results$b)
 
 # Create the plot

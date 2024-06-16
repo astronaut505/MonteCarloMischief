@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\portfolio.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\portfolio.dir/objects.a @CMakeFiles\portfolio.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -shared -o libportfolio.dll -Wl,--out-implib,libportfolio.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\portfolio.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\portfolio.dir\linkLibs.rsp

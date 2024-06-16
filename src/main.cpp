@@ -2,6 +2,7 @@
 #include <iostream>
 #include "../include/Portfolio.h"
 #include <vector>
+#include "../include/OptionPricing.h"
 
 void analyzeS0();
 void analyzeSigmaAndT();
