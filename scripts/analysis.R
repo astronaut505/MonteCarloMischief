@@ -1,10 +1,8 @@
-setwd("~/GitHub/MonteCarloMischief/scripts")
+library(Rcpp)
 library(ggplot2)
 
 # Load the Rcpp package
-library(Rcpp)
 sourceCpp("../R/portfolio_pricing.cpp")
-
 
 # Define the parameters
 s0 <- 115
@@ -53,4 +51,3 @@ write.csv(results, output_file, row.names = FALSE)
 
 # Print a message confirming the write
 cat("Results written to", output_file, "\n")
-

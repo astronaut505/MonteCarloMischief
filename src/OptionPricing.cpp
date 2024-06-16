@@ -1,4 +1,4 @@
-#include "OptionPricing.h"
+#include "../include/OptionPricing.h"
 #include <cmath>
 #include <algorithm>
 

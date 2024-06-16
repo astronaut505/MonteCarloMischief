@@ -1,5 +1,5 @@
-#include "Portfolio.h"
-#include "OptionPricing.h"
+#include "../include/Portfolio.h"
+#include "../include/OptionPricing.h"
 
 Portfolio::Portfolio(double S0, double sigma, double r, double d, double T, double K1, double K2, double K3, double K4)
     : S0(S0), sigma(sigma), r(r), d(d), T(T), K1(K1), K2(K2), K3(K3), K4(K4) {}

@@ -1,6 +1,10 @@
 #ifndef PORTFOLIO_H
 #define PORTFOLIO_H
 
+#include <vector>
+#include "OptionPricing.h"
+#include "MonteCarloSimulation.h"
+
 class Portfolio
 {
 public:
