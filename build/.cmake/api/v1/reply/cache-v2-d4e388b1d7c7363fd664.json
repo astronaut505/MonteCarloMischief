@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/PortfolioPricing"
+			"value" : "C:/Program Files (x86)/MonteCarloMischief"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1311,42 +1311,6 @@
 		},
 		{
 			"name" : "MonteCarloMischief_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/Me/Documents/GitHub/MonteCarloMischief"
-		},
-		{
-			"name" : "PortfolioPricing_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/Me/Documents/GitHub/MonteCarloMischief/build"
-		},
-		{
-			"name" : "PortfolioPricing_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "PortfolioPricing_SOURCE_DIR",
 			"properties" : 
 			[
 				{
