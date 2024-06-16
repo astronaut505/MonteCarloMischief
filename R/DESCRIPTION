@@ -1,0 +1,10 @@
+Package: portfolio
+Type: Package
+Title: Portfolio Pricing using Monte Carlo Simulation
+Version: 1.0
+Author: Daryush Ray
+Maintainer: Daryush Ray <d.ray@student.uw.edu.pl>
+Description: Monte Carlo simulation and option pricing for short call condor strategy.
+License: GPL-3
+Imports: Rcpp
+LinkingTo: Rcpp
