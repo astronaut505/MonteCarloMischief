@@ -10,9 +10,9 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
-// monte_carlo_barrier_option
-double monte_carlo_barrier_option(int n_sim, double S0, double K, double r, double sigma, double T, double barrier, bool is_call, bool is_down_and_out);
-RcppExport SEXP _BarrierOptionPricing_monte_carlo_barrier_option(SEXP n_simSEXP, SEXP S0SEXP, SEXP KSEXP, SEXP rSEXP, SEXP sigmaSEXP, SEXP TSEXP, SEXP barrierSEXP, SEXP is_callSEXP, SEXP is_down_and_outSEXP) {
+// monte_carlo_arithmetic_asian
+double monte_carlo_arithmetic_asian(int n_sim, double S0, double K, double r, double sigma, double T, double barrier, bool is_call, bool is_down_and_out);
+RcppExport SEXP _BarrierOptionPricing_monte_carlo_arithmetic_asian(SEXP n_simSEXP, SEXP S0SEXP, SEXP KSEXP, SEXP rSEXP, SEXP sigmaSEXP, SEXP TSEXP, SEXP barrierSEXP, SEXP is_callSEXP, SEXP is_down_and_outSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -25,13 +25,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< double >::type barrier(barrierSEXP);
     Rcpp::traits::input_parameter< bool >::type is_call(is_callSEXP);
     Rcpp::traits::input_parameter< bool >::type is_down_and_out(is_down_and_outSEXP);
-    rcpp_result_gen = Rcpp::wrap(monte_carlo_barrier_option(n_sim, S0, K, r, sigma, T, barrier, is_call, is_down_and_out));
+    rcpp_result_gen = Rcpp::wrap(monte_carlo_arithmetic_asian(n_sim, S0, K, r, sigma, T, barrier, is_call, is_down_and_out));
     return rcpp_result_gen;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_BarrierOptionPricing_monte_carlo_barrier_option", (DL_FUNC) &_BarrierOptionPricing_monte_carlo_barrier_option, 9},
+    {"_BarrierOptionPricing_monte_carlo_arithmetic_asian", (DL_FUNC) &_BarrierOptionPricing_monte_carlo_arithmetic_asian, 9},
     {NULL, NULL, 0}
 };
 

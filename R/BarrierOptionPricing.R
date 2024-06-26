@@ -1,4 +1,4 @@
-#' Monte Carlo Barrier Option Pricing
+#' Monte Carlo Arithmetic Asian Option Pricing
 #'
 #' @param n_sim Number of simulations
 #' @param S0 Initial stock price
@@ -12,8 +12,7 @@
 #' @return Option price
 #' @export
 #' @examples
-#' monte_carlo_barrier_option(10000, 115, 100, 0.05, 0.25, 5/12, 90, TRUE, TRUE)
-#'
-monte_carlo_barrier_option <- function(n_sim, S0, K, r, sigma, T, barrier, is_call, is_down_and_out) {
-  .Call('_BarrierOptionPricing_monte_carlo_barrier_option', PACKAGE = 'BarrierOptionPricing', n_sim, S0, K, r, sigma, T, barrier, is_call, is_down_and_out)
+#' monte_carlo_arithmetic_asian(10000, 115, 100, 0.05, 0.25, 5/12, 90, TRUE, TRUE)
+monte_carlo_arithmetic_asian <- function(n_sim, S0, K, r, sigma, T, barrier, is_call, is_down_and_out) {
+  .Call('_BarrierOptionPricing_monte_carlo_arithmetic_asian', PACKAGE = 'BarrierOptionPricing', n_sim, S0, K, r, sigma, T, barrier, is_call, is_down_and_out)
 }
