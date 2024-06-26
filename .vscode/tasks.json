@@ -2,15 +2,31 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "CMake Build",
+      "label": "build Rcpp code",
       "type": "shell",
-      "command": "cmake --build build",
+      "command": "g++",
+      "args": [
+        "-I",
+        "C:/Program Files/R/R-4.3.1/include",
+        "-I",
+        "C:/Users/Me/AppData/Local/R/win-library/4.3/Rcpp/include",
+        "-L",
+        "C:/Program Files/R/R-4.3.1/bin/x64",
+        "-lR",
+        "-shared",
+        "-o",
+        "${workspaceFolder}/src/BarrierOptionPricing.dll", // for Windows
+        "${workspaceFolder}/src/BarrierOptionPricing.cpp"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/src"
+      },
+      "problemMatcher": ["$gcc"],
       "group": {
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": ["$gcc"],
-      "detail": "Generated task by CMake Tools."
+      "detail": "Compiles Rcpp code and generates a shared library (DLL)."
     }
   ]
 }

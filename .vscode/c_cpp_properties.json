@@ -4,13 +4,14 @@
       "name": "Win32",
       "includePath": [
         "${workspaceFolder}/**",
-        "C:/Libraries/Rcpp/include",
-        "C:/Program Files/R/R-4.3.1/include"
+        "C:/Program Files/R/R-4.3.1/include",
+        "C:/Users/Me/AppData/Local/R/win-library/4.3/Rcpp/include"
       ],
       "defines": [],
-      "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+      "windowsSdkVersion": "10.0.19041.0",
+      "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
       "cStandard": "c11",
-      "cppStandard": "c++14",
+      "cppStandard": "c++17",
       "intelliSenseMode": "windows-gcc-x64"
     }
   ],
