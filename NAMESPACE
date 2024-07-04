@@ -1,2 +1,2 @@
 useDynLib(BarrierOptionPricing)
-export(monte_carlo_barrier_option)
+export(monte_carlo_arithmetic_asian)

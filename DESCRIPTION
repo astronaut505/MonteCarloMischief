@@ -1,11 +1,11 @@
 Package: BarrierOptionPricing
 Type: Package
-Title: Pricing Barrier Options Using Monte Carlo Simulation
+Title: Barrier Option Pricing using Monte Carlo Simulations
 Version: 0.1.0
-Author: Your Name
-Maintainer: Your Name <your.email@example.com>
-Description: A package to price barrier options using Monte Carlo simulation.
-Depends: R (>= 3.5.0)
+Author: Daryush Ray
+Maintainer: Daryush RAy <d.ray@student.uw.edu.pl>
+Description: This package provides functions to price arithmetic Asian options with barriers using Monte Carlo simulations.
 License: GPL-3
+Imports: Rcpp (>= 1.0.6)
 LinkingTo: Rcpp
 RoxygenNote: 7.3.1
